@@ -16,11 +16,9 @@ sumDiff <- sum(df$diff)
 # Part 2
 
 # search how often left is in right
-
 df$leftInRight <- sapply(df$V1, function(x) sum(df$V4 == x))
 
 # left * times in right
-
 df$leftTimesInRight <- df$V1 * df$leftInRight
 
 # sum the values
